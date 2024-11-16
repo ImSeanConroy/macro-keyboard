@@ -4,4 +4,5 @@
   (lib (name "Type-C")(type "Legacy")(uri "/Users/seanconroy/Documents/Development/Hardware/Macro-Keyboards/Macro-Keyboard-V2/Libraries/Type-C.pretty/Type-C.lib")(options "")(descr ""))
   (lib (name "random-keyboard-parts")(type "Legacy")(uri "/Users/seanconroy/Documents/Development/Hardware/Macro-Keyboards/Macro-Keyboard-V2/Libraries/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
   (lib (name "ScottoKeebs")(type "KiCad")(uri "/Users/seanconroy/Documents/Development/Hardware/Macro-Keyboards/Macro-Keyboard-V2/Libraries/ScottoKicad/symbols/ScottoKeebs.kicad_sym")(options "")(descr ""))
+  (lib (name "local")(type "KiCad")(uri "${KIPRJMOD}/local.kicad_sym")(options "")(descr ""))
 )
