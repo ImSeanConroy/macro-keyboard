@@ -2,6 +2,8 @@
 
 Minimal Layout, Maximum Efficiency — A collection of macro keyboards to boost productivity without crowding your workspace.
 
+![Project Image](https://github.com/ImSeanConroy/macro-keyboard/blob/main/.github/repo-img.png)
+
 ## License
 
 This project is Distributed under the MIT License - see the [LICENSE](LICENSE) file for information.
