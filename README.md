@@ -17,6 +17,10 @@ This project is a work in progress, the following outlines the current features 
 - Enhanced PCB: Improve printed circuit board design for better performance and reliability.
 - Bluetooth Functionality: Implement and test wireless connectivity.
 
+## Contributing
+
+Contributions are welcome. Please open an issue or submit a pull request for any enhancements or bug fixes.
+
 ## License
 
 This project is Distributed under the MIT License - see the [LICENSE](LICENSE) file for information.

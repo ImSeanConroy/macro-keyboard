@@ -2914,6 +2914,18 @@
 		(uuid "18ae4d41-e8f7-4010-a025-70d4dd0cd6b7")
 	)
 	(junction
+		(at 163.83 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ecc6460-cbc1-4c7b-a2c8-7cd5f3fc4277")
+	)
+	(junction
+		(at 163.83 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2898a496-6ffc-4376-b9cc-67ab602cc016")
+	)
+	(junction
 		(at 76.2 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3198,6 +3210,16 @@
 			(type default)
 		)
 		(uuid "01e7895b-7967-4e80-99e5-207ef9a689c9")
+	)
+	(wire
+		(pts
+			(xy 163.83 132.08) (xy 163.83 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0231a3d6-48e9-4803-bed3-eb5825941fdc")
 	)
 	(wire
 		(pts
@@ -3581,6 +3603,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 139.7) (xy 163.83 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44b53194-f36e-4f2d-8a39-4891119523e4")
+	)
+	(wire
+		(pts
 			(xy 73.66 66.04) (xy 76.2 66.04)
 		)
 		(stroke
@@ -3711,7 +3743,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 132.08) (xy 170.18 132.08)
+			(xy 157.48 132.08) (xy 163.83 132.08)
 		)
 		(stroke
 			(width 0)
@@ -4171,7 +4203,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 142.24) (xy 170.18 142.24)
+			(xy 157.48 142.24) (xy 163.83 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4188,6 +4220,16 @@
 			(type default)
 		)
 		(uuid "97c8847e-40eb-43a5-889a-ce56354ff596")
+	)
+	(wire
+		(pts
+			(xy 163.83 142.24) (xy 170.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9868426d-4f77-47c3-a56a-ebf052997679")
 	)
 	(wire
 		(pts
@@ -4768,6 +4810,16 @@
 			(type default)
 		)
 		(uuid "f77f259e-5970-4fe9-a319-141d002a0cb9")
+	)
+	(wire
+		(pts
+			(xy 163.83 132.08) (xy 170.18 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7f28f0d-c0c1-411f-802f-e9084cb389c5")
 	)
 	(wire
 		(pts
@@ -5598,6 +5650,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C150390"
+			(at 113.03 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "89175836-09ca-41ad-b854-37eacef9565c")
 		)
@@ -5751,6 +5812,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C77978"
+			(at 111.76 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b903d900-23a9-40a0-8350-822f43963a31")
 		)
@@ -5773,7 +5843,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1e62301f-ae5d-44ad-b67c-1d91a77d0393")
 		(property "Reference" "SW8"
 			(at 104.394 69.85 0)
@@ -5810,6 +5880,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 104.14 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
 			(at 104.14 66.04 0)
 			(effects
 				(font
@@ -5905,6 +5984,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C77978"
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "be68d9f3-25a2-4c6a-908a-e73340dcfc02")
 		)
@@ -5973,6 +6061,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C221929"
+			(at 157.48 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6365a6b4-4dda-4970-8e77-4fa704cad908")
 		)
@@ -6001,7 +6098,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2a732c71-ec90-4c97-a074-32ce34711b8f")
 		(property "Reference" "SW2"
 			(at 68.834 50.8 0)
@@ -6038,6 +6135,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 68.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
 			(at 68.58 46.99 0)
 			(effects
 				(font
@@ -6113,6 +6219,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C84376"
+			(at 165.1 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "292b3e03-2aba-41a8-b084-b3e8c51882a8")
 		)
@@ -6172,6 +6287,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 153.67 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C1804"
 			(at 153.67 93.98 0)
 			(effects
 				(font
@@ -6248,6 +6372,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C165948"
+			(at 58.42 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0e4b9ae0-52c4-4c82-b0ea-a50a6341ad44")
 		)
@@ -6313,13 +6446,12 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
-			(at 250.19 102.87 90)
+		(property "Value" "10k"
+			(at 250.19 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -6341,6 +6473,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 250.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C84376"
 			(at 250.19 105.41 0)
 			(effects
 				(font
@@ -6436,7 +6577,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "428cd534-95cb-48d8-875c-b7d75b3359f2")
 		(property "Reference" "SW1"
 			(at 51.054 50.8 0)
@@ -6473,6 +6614,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 50.8 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
 			(at 50.8 46.99 0)
 			(effects
 				(font
@@ -6540,6 +6690,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 144.78 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C62912"
 			(at 144.78 137.16 0)
 			(effects
 				(font
@@ -6743,6 +6902,15 @@
 			)
 		)
 		(property "Description" "16MHz, 32kB Flash, 2.5kB SRAM, 1kB EEPROM, USB 2.0, TQFP-44"
+			(at 226.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C44854"
 			(at 226.06 91.44 0)
 			(effects
 				(font
@@ -7011,6 +7179,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C70069"
+			(at 76.2 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f1aa0001-9083-4653-b17d-e8539a206bca")
 		)
@@ -7021,6 +7198,82 @@
 			(project "macro-keyboard"
 				(path "/79eefec5-a2c6-42b3-be49-034390751777"
 					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 163.83 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "750bec40-72ca-4e1f-8a44-c1985c545389")
+		(property "Reference" "C6"
+			(at 166.116 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 167.132 139.446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 163.83 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 163.83 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C62912"
+			(at 163.83 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa7de38f-6322-40ac-ac61-10aaded00f98")
+		)
+		(pin "2"
+			(uuid "9058ad7a-9176-49ca-97cb-62e6de59db90")
+		)
+		(instances
+			(project "macro-keyboard"
+				(path "/79eefec5-a2c6-42b3-be49-034390751777"
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -7078,6 +7331,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C95841"
+			(at 170.18 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cd5c70d8-6a65-43a2-842b-b06d00201c0b")
 		)
@@ -7100,7 +7362,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "76b3712e-3560-4790-8367-97f9483a1270")
 		(property "Reference" "SW6"
 			(at 68.834 69.85 0)
@@ -7145,6 +7407,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" ""
+			(at 68.58 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "41526e97-35aa-4d6a-9a83-54fa374cfa0c")
 		)
@@ -7167,7 +7438,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "77884cd3-e52e-4fb1-bdf5-ee4c5d784331")
 		(property "Reference" "SW7"
 			(at 86.614 69.85 0)
@@ -7204,6 +7475,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 86.36 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
 			(at 86.36 66.04 0)
 			(effects
 				(font
@@ -7271,6 +7551,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 76.2 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C84375"
 			(at 76.2 134.62 0)
 			(effects
 				(font
@@ -7358,6 +7647,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 76.2 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C77978"
 			(at 76.2 72.39 0)
 			(effects
 				(font
@@ -7519,6 +7817,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C77978"
+			(at 111.76 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9e36a1ab-be61-4487-8064-d1bf854e40fe")
 		)
@@ -7541,7 +7848,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8db88e3d-3cc4-4cc9-b283-ca5fc633e158")
 		(property "Reference" "SW4"
 			(at 104.394 50.8 0)
@@ -7578,6 +7885,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
 			(at 104.14 46.99 0)
 			(effects
 				(font
@@ -7665,6 +7981,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 93.98 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C77978"
 			(at 93.98 72.39 0)
 			(effects
 				(font
@@ -7806,6 +8131,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C150390"
+			(at 113.03 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7b876db-d857-4d58-aab5-6ffabcfe07ad")
 		)
@@ -7866,6 +8200,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 97.79 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C12333"
 			(at 97.79 134.62 0)
 			(effects
 				(font
@@ -8006,6 +8349,15 @@
 			)
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4, small symbol"
+			(at 158.75 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C255909"
 			(at 158.75 88.9 0)
 			(effects
 				(font
@@ -8165,6 +8517,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C77978"
 			(at 76.2 53.34 0)
 			(effects
 				(font
@@ -8524,6 +8885,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C77978"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "86c4f42b-3bc8-427c-bcee-38bd551692f0")
 		)
@@ -8622,13 +8992,12 @@
 				)
 			)
 		)
-		(property "Value" "C_Small"
-			(at 207.518 92.71 90)
+		(property "Value" "1u"
+			(at 209.296 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
@@ -8650,6 +9019,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 205.74 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C116352"
 			(at 205.74 86.36 0)
 			(effects
 				(font
@@ -8680,7 +9058,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c8ab4f01-8808-4563-a1c4-eef47d2be886")
 		(property "Reference" "SW5"
 			(at 51.054 69.85 0)
@@ -8717,6 +9095,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 50.8 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
 			(at 50.8 66.04 0)
 			(effects
 				(font
@@ -8792,6 +9179,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C62912"
+			(at 157.48 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2a3c1de9-d80b-4f75-9962-ee3a4c36fc36")
 		)
@@ -8851,6 +9247,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 151.13 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C62912"
 			(at 151.13 137.16 0)
 			(effects
 				(font
@@ -8992,6 +9397,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C1804"
+			(at 166.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1614320d-d241-4585-aff6-fab789cc33b3")
 		)
@@ -9014,7 +9428,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e293cf9d-ee47-49b3-a4b6-df7e47073987")
 		(property "Reference" "SW3"
 			(at 86.614 50.8 0)
@@ -9051,6 +9465,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 86.36 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
 			(at 86.36 46.99 0)
 			(effects
 				(font
@@ -9212,6 +9635,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C77978"
+			(at 58.42 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fb09114d-cf95-4f08-b976-36dbf00840c6")
 		)
@@ -9271,6 +9703,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 73.66 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C84375"
 			(at 73.66 134.62 0)
 			(effects
 				(font
