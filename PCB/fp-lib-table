@@ -6,4 +6,5 @@
   (lib (name "MX_Only")(type "KiCad")(uri "${KIPRJMOD}/Libraries/MX_Alps_Hybrid/MX_Only.pretty")(options "")(descr ""))
   (lib (name "ScottoKeebs_Hotswap")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ScottoKicad/footprints/ScottoKeebs_Hotswap.pretty")(options "")(descr ""))
   (lib (name "ScottoKeebs_MX")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ScottoKicad/footprints/ScottoKeebs_MX.pretty")(options "")(descr ""))
+  (lib (name "xiao ESP32C3_PCB")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Seeeduino xiao ESP32C3 KiCAD Library/xiao ESP32C3_PCB.pretty")(options "")(descr ""))
 )

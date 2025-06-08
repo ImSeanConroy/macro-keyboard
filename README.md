@@ -1,6 +1,6 @@
 # Macro Keyboard
 
-Minimal Layout, Maximum Efficiency — A 2x4 macro keyboard to boost productivity without crowding your workspace.
+Minimal Layout, Maximum Efficiency — A 1x4 macro keyboard designed to boost productivity without cluttering your workspace.
 
 ![Project Image](https://github.com/ImSeanConroy/macro-keyboard/blob/main/.github/repo-img.png)
 
@@ -9,13 +9,14 @@ Minimal Layout, Maximum Efficiency — A 2x4 macro keyboard to boost productivit
 This project is a work in progress, the following outlines the current features and planned improvements:
 
 ### Current Features
-- Compact Design: 2x4 layout for minimal desk space usage.
-- Customizable Macros: Tailor key functions to your needs.
+- Compact Design: Space-saving 1x4 layout for minimal desk footprint.
+- Customizable Macros: Assign any key functions to match your workflow.
 
 ### Upcoming Features
-- Layout Variations: Develop additional keyboard layouts (e.g., 1x4, 3x3, 3x4, and 4x2).
-- Enhanced PCB: Improve printed circuit board design for better performance and reliability.
-- Bluetooth Functionality: Implement and test wireless connectivity.
+- Layout Variations: Explore and support additional configurations (e.g., 1x4, 3x3, 3x4, 4x2).
+- Enhanced PCB: Redesign the printed circuit board for improved performance and reliability.
+- Bluetooth Functionality: Add and test wireless connectivity.
+- Custom PCB Design: Move away from prebuilt Seeed Studio development boards. (A previous attempt was made, but limited electronics knowledge made debugging and identifying issues difficult.)
 
 ## Contributing
 
