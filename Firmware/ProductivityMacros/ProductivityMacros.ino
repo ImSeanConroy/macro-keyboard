@@ -10,29 +10,49 @@ struct Button {
   ButtonAction action;
 };
 
-void muteUnmute() {
-  // Webex mute/unmute shortcut: Ctrl + M (Cmd + M on Mac)
+void pressCtrlKey(char key) {
   Keyboard.press(KEY_LEFT_CTRL);
-  Keyboard.press('m');
+  Keyboard.press(key);
   delay(100);
-  Keyboard.release('m');
+  Keyboard.release(key);
   Keyboard.release(KEY_LEFT_CTRL);
 }
 
-void startStopVideo() {
-  // Webex start/stop video shortcut: Ctrl + Shift + V
+void pressCtrlShiftKey(char key) {
   Keyboard.press(KEY_LEFT_CTRL);
   Keyboard.press(KEY_LEFT_SHIFT);
-  Keyboard.press('v');
+  Keyboard.press(key);
   delay(100);
-  Keyboard.release('v');
+  Keyboard.release(key);
   Keyboard.release(KEY_LEFT_SHIFT);
   Keyboard.release(KEY_LEFT_CTRL);
 }
 
+void saveDocument() {
+  // Save document shortcut: Ctrl + S (Cmd + S on Mac)
+  pressCtrlKey('s');
+}
+
+void copyText() {
+  // Copy shortcut: Ctrl + C (Cmd + C on Mac)
+  pressCtrlKey('c');
+}
+
+void pasteText() {
+  // Paste shortcut: Ctrl + V (Cmd + V on Mac)
+  pressCtrlKey('v');
+}
+
+void undoAction() {
+  // Undo shortcut: Ctrl + Z (Cmd + Z on Mac)
+  pressCtrlKey('z');
+}
+
 Button buttons[] = {
-  {1, HIGH, HIGH, 0, muteUnmute},
-  {2, HIGH, HIGH, 0, startStopVideo},
+  {1, HIGH, HIGH, 0, saveDocument},
+  {2, HIGH, HIGH, 0, copyText},
+  {3, HIGH, HIGH, 0, pasteText},
+  {4, HIGH, HIGH, 0, undoAction},
 };
 
 const int NUM_BUTTONS = sizeof(buttons) / sizeof(buttons[0]);

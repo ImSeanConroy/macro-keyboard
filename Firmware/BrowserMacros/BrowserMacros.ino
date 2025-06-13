@@ -10,29 +10,49 @@ struct Button {
   ButtonAction action;
 };
 
-void muteUnmute() {
-  // Webex mute/unmute shortcut: Ctrl + M (Cmd + M on Mac)
+void pressCtrlKey(char key) {
   Keyboard.press(KEY_LEFT_CTRL);
-  Keyboard.press('m');
+  Keyboard.press(key);
   delay(100);
-  Keyboard.release('m');
+  Keyboard.release(key);
   Keyboard.release(KEY_LEFT_CTRL);
 }
 
-void startStopVideo() {
-  // Webex start/stop video shortcut: Ctrl + Shift + V
+void pressCtrlShiftKey(char key) {
   Keyboard.press(KEY_LEFT_CTRL);
   Keyboard.press(KEY_LEFT_SHIFT);
-  Keyboard.press('v');
+  Keyboard.press(key);
   delay(100);
-  Keyboard.release('v');
+  Keyboard.release(key);
   Keyboard.release(KEY_LEFT_SHIFT);
   Keyboard.release(KEY_LEFT_CTRL);
 }
 
+void openNewTab() {
+  // Open new tab shortcut: Ctrl + T (Cmd + T on Mac)
+  pressCtrlKey('t');
+}
+
+void closeTab() {
+  // Close tab shortcut: Ctrl + W (Cmd + W on Mac)
+  pressCtrlKey('w');
+}
+
+void reopenClosedTab() {
+  // Reopen closed tab shortcut: Ctrl + Shift + T (Cmd + Shift + T on Mac)
+  pressCtrlShiftKey('t');
+}
+
+void openDownloads() {
+  // Open downloads shortcut: Ctrl + J (Cmd + J on Mac)
+  pressCtrlKey('j');
+}
+
 Button buttons[] = {
-  {1, HIGH, HIGH, 0, muteUnmute},
-  {2, HIGH, HIGH, 0, startStopVideo},
+  {1, HIGH, HIGH, 0, openNewTab},
+  {2, HIGH, HIGH, 0, closeTab},
+  {3, HIGH, HIGH, 0, reopenClosedTab},
+  {4, HIGH, HIGH, 0, openDownloads},
 };
 
 const int NUM_BUTTONS = sizeof(buttons) / sizeof(buttons[0]);
