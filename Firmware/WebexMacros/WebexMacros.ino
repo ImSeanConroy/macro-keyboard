@@ -19,27 +19,29 @@ void typeString(const char *msg) {
   }
 }
 
-void actionOne() {
-  typeString("git pull");
+void muteUnmute() {
+  // Webex mute/unmute shortcut: Ctrl + M (Cmd + M on Mac)
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press('m');
+  delay(100);
+  Keyboard.release('m');
+  Keyboard.release(KEY_LEFT_CTRL);
 }
 
-void actionTwo() {
-  typeString("git status");
-}
-
-void actionThree() {
-  typeString("git commit -m \"\"");
-}
-
-void actionFour() {
-  typeString("git push");
+void startStopVideo() {
+  // Webex start/stop video shortcut: Ctrl + Shift + V
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press(KEY_LEFT_SHIFT);
+  Keyboard.press('v');
+  delay(100);
+  Keyboard.release('v');
+  Keyboard.release(KEY_LEFT_SHIFT);
+  Keyboard.release(KEY_LEFT_CTRL);
 }
 
 Button buttons[] = {
-  {1, HIGH, HIGH, 0, actionOne},
-  {2, HIGH, HIGH, 0, actionTwo},
-  {3, HIGH, HIGH, 0, actionThree},
-  {4, HIGH, HIGH, 0, actionFour},
+  {1, HIGH, HIGH, 0, muteUnmute},
+  {2, HIGH, HIGH, 0, startStopVideo},
 };
 
 const int NUM_BUTTONS = sizeof(buttons) / sizeof(buttons[0]);
