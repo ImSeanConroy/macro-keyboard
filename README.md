@@ -34,3 +34,4 @@ If you are having problems, please let me know by [raising a new issue](https://
 
 - [Designing a keyboard from scratch](https://www.masterzen.fr/)
 - [PCB Designer Guide](https://wiki.ai03.com/books/pcb-design/chapter/pcb-designer-guide)
+- [Getting Started with Seeed Studio XIAO SAMD21](https://wiki.seeedstudio.com/Seeeduino-XIAO/#resourses)

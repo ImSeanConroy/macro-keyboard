@@ -6,4 +6,5 @@
   (lib (name "ScottoKeebs")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ScottoKicad/symbols/ScottoKeebs.kicad_sym")(options "")(descr ""))
   (lib (name "local")(type "KiCad")(uri "${KIPRJMOD}/local.kicad_sym")(options "")(descr ""))
   (lib (name "MOUDLE-SEEEDUINO-XIAO-ESP32C3")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Seeeduino xiao ESP32C3 KiCAD Library/MOUDLE-SEEEDUINO-XIAO-ESP32C3.kicad_sym")(options "")(descr ""))
+  (lib (name "Seeeduino XIAO")(type "Legacy")(uri "${KIPRJMOD}/Libraries/Seeeduino XIAO KICAD/Seeeduino XIAO.lib")(options "")(descr ""))
 )
