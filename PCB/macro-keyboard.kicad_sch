@@ -5,9 +5,9 @@
 	(uuid "79eefec5-a2c6-42b3-be49-034390751777")
 	(paper "A5")
 	(title_block
-		(title "Macro Keyboard 2x4")
+		(title "Macro Keyboard 4x1")
 		(date "2025-01-22")
-		(rev "0.1")
+		(rev "0.2")
 	)
 	(lib_symbols
 		(symbol "Seeeduino XIAO:SeeeduinoXIAO"
@@ -685,10 +685,10 @@
 		(uuid "01a44c29-dfc7-4c94-8e91-ba0b29888564")
 	)
 	(junction
-		(at 175.26 53.34)
+		(at 175.26 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "374e9072-bb02-491a-9dd8-362ae2ecf4dd")
+		(uuid "05274da2-f0b7-46a6-9aa9-f8e417bf3470")
 	)
 	(junction
 		(at 59.69 86.36)
@@ -702,9 +702,11 @@
 		(color 0 0 0 0)
 		(uuid "bddbcaa8-3618-4ca6-bfff-14a47a06f731")
 	)
-	(no_connect
-		(at 154.94 82.55)
-		(uuid "0017f667-376c-4342-83a4-b82dd7b6f100")
+	(junction
+		(at 175.26 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d140ae3b-8dbb-4aea-a83b-d52164a77fca")
 	)
 	(no_connect
 		(at 172.72 57.15)
@@ -790,16 +792,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 38.1) (xy 158.75 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10aedc41-58b8-4597-a836-4ac3784d7774")
-	)
-	(wire
-		(pts
 			(xy 128.27 49.53) (xy 130.81 49.53)
 		)
 		(stroke
@@ -810,13 +802,23 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 35.56) (xy 175.26 35.56)
+			(xy 177.8 83.82) (xy 175.26 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1e86a592-4961-4396-9566-4006942a7580")
+		(uuid "1d69ef49-9e8b-4c3b-8f8e-80c1e5e62a5c")
+	)
+	(wire
+		(pts
+			(xy 154.94 82.55) (xy 154.94 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e819912-c3cf-4c7a-95f8-0a2212a28bc5")
 	)
 	(wire
 		(pts
@@ -900,6 +902,26 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 38.1) (xy 158.75 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b3d687-835d-4ca3-9840-e2d0b23e425f")
+	)
+	(wire
+		(pts
+			(xy 158.75 36.83) (xy 175.26 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7546c41c-a6e9-47bc-a9a7-fa347121a134")
+	)
+	(wire
+		(pts
 			(xy 95.25 86.36) (xy 97.79 86.36)
 		)
 		(stroke
@@ -907,6 +929,16 @@
 			(type default)
 		)
 		(uuid "835cf77b-e449-400c-9a0a-4e901db3039e")
+	)
+	(wire
+		(pts
+			(xy 175.26 36.83) (xy 175.26 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88863644-87a2-43c3-a744-e973e172e037")
 	)
 	(wire
 		(pts
@@ -927,6 +959,16 @@
 			(type default)
 		)
 		(uuid "8e457e7c-4ff6-477b-8914-a0dad0ebe39c")
+	)
+	(wire
+		(pts
+			(xy 175.26 83.82) (xy 175.26 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9356d132-ef90-4e91-a7c2-a04af1f630e0")
 	)
 	(wire
 		(pts
@@ -957,16 +999,6 @@
 			(type default)
 		)
 		(uuid "af97d2b8-c2ed-4df8-b6b5-81ce88af2509")
-	)
-	(wire
-		(pts
-			(xy 175.26 53.34) (xy 176.53 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5644d8f-166d-44b4-abda-c47cf90250a8")
 	)
 	(wire
 		(pts
@@ -1030,6 +1062,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 83.82) (xy 175.26 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7035ff-7759-4c67-a319-80158be5ce5f")
+	)
+	(wire
+		(pts
 			(xy 74.93 83.82) (xy 77.47 83.82)
 		)
 		(stroke
@@ -1037,16 +1079,6 @@
 			(type default)
 		)
 		(uuid "ebfd4890-9d71-4fcc-8506-b4ed0332511c")
-	)
-	(wire
-		(pts
-			(xy 175.26 35.56) (xy 175.26 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc0f9632-c8fb-4380-a523-eeae0851b9c4")
 	)
 	(rectangle
 		(start 20.32 64.77)
@@ -1270,7 +1302,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 176.53 53.34 90)
+		(at 177.8 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1278,7 +1310,7 @@
 		(dnp no)
 		(uuid "09600df4-d99c-438d-bd29-2c7fb4aa628f")
 		(property "Reference" "#PWR01"
-			(at 182.88 53.34 0)
+			(at 184.15 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1287,7 +1319,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.61 53.34 90)
+			(at 182.88 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1295,7 +1327,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 53.34 0)
+			(at 177.8 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1304,7 +1336,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 53.34 0)
+			(at 177.8 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,7 +1345,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 53.34 0)
+			(at 177.8 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1636,10 +1668,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d78e5b4e-f625-400b-b486-edc81060bee3")
 		(property "Reference" "U2"
-			(at 157.1341 82.55 0)
+			(at 128.016 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1648,7 +1679,7 @@
 			)
 		)
 		(property "Value" "SeeeduinoXIAO"
-			(at 157.1341 85.09 0)
+			(at 128.016 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
