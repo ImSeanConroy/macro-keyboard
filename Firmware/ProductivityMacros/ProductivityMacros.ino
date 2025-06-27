@@ -1,3 +1,14 @@
+/*
+ * ============================================================
+ * Project: Macro Keyboard (Productivity Macros 1x4)
+ * Developer: Sean Conroy
+ * Board: Seeed XIAO SAMD21
+ * License: MIT
+ * Description:
+ *   - 
+ * ============================================================
+ */
+
 #include <Keyboard.h>
 
 typedef void (*ButtonAction)();

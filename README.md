@@ -11,10 +11,9 @@ This project is a work in progress, the following outlines the current features 
 ### Current Features
 - Compact Design: Space-saving with minimal desk footprint.
 - Customizable Macros: Assign any key functions to match your workflow.
-- Layout Variations: Supports various configurations (e.g., 4x1, 2x1, 1x1, 4x2).
+- Layout Variations: Supports various configurations (e.g., 1x1, 1x2, 1x4, 2x4, and 3x3).
 
 ### Upcoming Features
-- More Variations: Explore additional configurations (3x3 and 2x4).
 - Bluetooth Functionality: Add and test wireless connectivity.
 - Custom PCB Design: Move away from prebuilt Seeed Studio development boards. (A previous attempt was made, but limited electronics knowledge made debugging and identifying issues difficult.)
 
