@@ -14,6 +14,7 @@ This project is a work in progress, the following outlines the current features 
 - Layout Variations: Supports various configurations (e.g., 1x1, 1x2, 1x4, 2x4, and 3x3).
 
 ### Upcoming Features
+- OLED Display: Add and test the inclusion of an OLED display.
 - Bluetooth Functionality: Add and test wireless connectivity.
 - Custom PCB Design: Move away from prebuilt Seeed Studio development boards. (A previous attempt was made, but limited electronics knowledge made debugging and identifying issues difficult.)
 
