@@ -1,0 +1,11 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Alps_Only")(type "KiCad")(uri "${KIPRJMOD}/Libraries/MX_Alps_Hybrid/Alps_Only.pretty")(options "")(descr ""))
+  (lib (name "random-keyboard-parts")(type "KiCad")(uri "${KIPRJMOD}/Libraries/random-keyboard-parts.pretty")(options "")(descr ""))
+  (lib (name "Type-C")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Type-C.pretty")(options "")(descr ""))
+  (lib (name "MX_Only")(type "KiCad")(uri "${KIPRJMOD}/Libraries/MX_Alps_Hybrid/MX_Only.pretty")(options "")(descr ""))
+  (lib (name "ScottoKeebs_Hotswap")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ScottoKicad/footprints/ScottoKeebs_Hotswap.pretty")(options "")(descr ""))
+  (lib (name "ScottoKeebs_MX")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ScottoKicad/footprints/ScottoKeebs_MX.pretty")(options "")(descr ""))
+  (lib (name "xiao ESP32C3_PCB")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Seeeduino xiao ESP32C3 KiCAD Library/xiao ESP32C3_PCB.pretty")(options "")(descr ""))
+  (lib (name "Seeeduino XIAO KICAD")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Seeeduino XIAO KICAD")(options "")(descr ""))
+)
