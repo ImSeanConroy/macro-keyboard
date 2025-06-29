@@ -1,11 +1,11 @@
 /*
  * ============================================================
- * Project: Macro Keyboard (Productivity Macros 1x4)
+ * Project: Macro Keyboard (Save Macros - 1x1)
  * Developer: Sean Conroy
  * Board: Seeed XIAO SAMD21
  * License: MIT
  * Description:
- *   - 
+ *   - Button 1 saves doccument.
  * ============================================================
  */
 
@@ -21,49 +21,17 @@ struct Button {
   ButtonAction action;
 };
 
-void pressCtrlKey(char key) {
-  Keyboard.press(KEY_LEFT_CTRL);
-  Keyboard.press(key);
-  delay(100);
-  Keyboard.release(key);
-  Keyboard.release(KEY_LEFT_CTRL);
-}
-
-void pressCtrlShiftKey(char key) {
-  Keyboard.press(KEY_LEFT_CTRL);
-  Keyboard.press(KEY_LEFT_SHIFT);
-  Keyboard.press(key);
-  delay(100);
-  Keyboard.release(key);
-  Keyboard.release(KEY_LEFT_SHIFT);
-  Keyboard.release(KEY_LEFT_CTRL);
-}
-
 void saveDocument() {
-  // Save document shortcut: Ctrl + S (Cmd + S on Mac)
-  pressCtrlKey('s');
-}
-
-void copyText() {
-  // Copy shortcut: Ctrl + C (Cmd + C on Mac)
-  pressCtrlKey('c');
-}
-
-void pasteText() {
-  // Paste shortcut: Ctrl + V (Cmd + V on Mac)
-  pressCtrlKey('v');
-}
-
-void undoAction() {
-  // Undo shortcut: Ctrl + Z (Cmd + Z on Mac)
-  pressCtrlKey('z');
+  // Save document shortcut: Cmd + S
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press('s');
+  delay(100);
+  Keyboard.releaseAll();
+  delay(100);
 }
 
 Button buttons[] = {
-  {1, HIGH, HIGH, 0, saveDocument},
-  {2, HIGH, HIGH, 0, copyText},
-  {3, HIGH, HIGH, 0, pasteText},
-  {4, HIGH, HIGH, 0, undoAction},
+  {0, HIGH, HIGH, 0, saveDocument},
 };
 
 const int NUM_BUTTONS = sizeof(buttons) / sizeof(buttons[0]);

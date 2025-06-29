@@ -1,11 +1,12 @@
 /*
  * ============================================================
- * Project: Macro Keyboard (Webex Macros 1x2)
+ * Project: Macro Keyboard (Webex Macros - 1x2)
  * Developer: Sean Conroy
  * Board: Seeed XIAO SAMD21
  * License: MIT
  * Description:
- *   - 
+ *   - Button 1 toggles mute/unmute in Webex (Cmd + Shift + M).
+ *   - Button 2 toggles video on/off in Webex (Ctrl + Shift + V).
  * ============================================================
  */
 
@@ -21,29 +22,29 @@ struct Button {
   ButtonAction action;
 };
 
-void muteUnmute() {
-  // Webex mute/unmute shortcut: Ctrl + M (Cmd + M on Mac)
-  Keyboard.press(KEY_LEFT_CTRL);
-  Keyboard.press('m');
+void toggleMute() {
+  // Webex mute/unmute shortcut: Cmd + Shift + M
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press(KEY_LEFT_SHIFT);
+  Keyboard.press('M');
   delay(100);
-  Keyboard.release('m');
-  Keyboard.release(KEY_LEFT_CTRL);
+  Keyboard.releaseAll();
+  delay(100);
 }
 
-void startStopVideo() {
+void toggleVideo() {
   // Webex start/stop video shortcut: Ctrl + Shift + V
   Keyboard.press(KEY_LEFT_CTRL);
   Keyboard.press(KEY_LEFT_SHIFT);
-  Keyboard.press('v');
+  Keyboard.press('V');
   delay(100);
-  Keyboard.release('v');
-  Keyboard.release(KEY_LEFT_SHIFT);
-  Keyboard.release(KEY_LEFT_CTRL);
+  Keyboard.releaseAll();
+  delay(100);
 }
 
 Button buttons[] = {
-  {1, HIGH, HIGH, 0, muteUnmute},
-  {2, HIGH, HIGH, 0, startStopVideo},
+  {0, HIGH, HIGH, 0, toggleMute},
+  {1, HIGH, HIGH, 0, toggleVideo},
 };
 
 const int NUM_BUTTONS = sizeof(buttons) / sizeof(buttons[0]);

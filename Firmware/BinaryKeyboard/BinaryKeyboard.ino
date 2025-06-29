@@ -1,14 +1,14 @@
 /*
  * ============================================================
- * Project: Macro Keyboard (Git Macros - 1x4)
+ * Project: Macro Keyboard (Binary Keyboard - 1x2)
  * Developer: Sean Conroy
  * Board: Seeed XIAO SAMD21
  * License: MIT
  * Description:
- *   - Button 1 types "git pull" to update local repository.
- *   - Button 2 types "git status" to show working tree state.
- *   - Button 3 types "git commit -m """ to begin a commit message.
- *   - Button 4 types "git push" to upload changes to remote.
+ *   - Button 1 types binary 0
+ *   - Button 2 types binary 1
+ *   - After 8 bits are entered, converts to ASCII character and types it
+ *   - Example: 01001000 01100101 01101100 01101100 01101111 00101100 00100000 01010111 01101111 01110010 01101100 01100100 00100001 00111111
  * ============================================================
  */
 
@@ -24,36 +24,41 @@ struct Button {
   ButtonAction action;
 };
 
-void typeString(const char *msg) {
-  for (const char *p = msg; *p; p++) {
-    Keyboard.press(*p);
-    delay(5);
-    Keyboard.release(*p);
-    delay(5);
+String binaryBuffer = "";  // Store '0' and '1' presses
+
+void typeChar(char c) {
+  Keyboard.press(c);
+  delay(5);
+  Keyboard.release(c);
+  delay(5);
+}
+
+void typeZero() {
+  binaryBuffer += '0';
+  checkBuffer();
+}
+
+void typeOne() {
+  binaryBuffer += '1';
+  checkBuffer();
+}
+
+void checkBuffer() {
+  if (binaryBuffer.length() == 8) {
+    // Convert binary string to char
+    char c = (char) strtol(binaryBuffer.c_str(), nullptr, 2);
+
+    // Type the ASCII char
+    typeChar(c);
+
+    // Clear buffer for next char
+    binaryBuffer = "";
   }
 }
 
-void gitPull() {
-  typeString("git pull");
-}
-
-void gitStatus() {
-  typeString("git status");
-}
-
-void gitCommit() {
-  typeString("git commit -m \"\"");
-}
-
-void gitPush() {
-  typeString("git push");
-}
-
 Button buttons[] = {
-  {0, HIGH, HIGH, 0, gitPull},
-  {1, HIGH, HIGH, 0, gitStatus},
-  {2, HIGH, HIGH, 0, gitCommit},
-  {3, HIGH, HIGH, 0, gitPush},
+  {0, HIGH, HIGH, 0, typeZero},
+  {1, HIGH, HIGH, 0, typeOne},
 };
 
 const int NUM_BUTTONS = sizeof(buttons) / sizeof(buttons[0]);
